@@ -1,0 +1,325 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="C:\Users\NEKSAGURL\Desktop\yamanan\stylesheet.css">
+  <title>Mini-task#6</title>
+  <style>
+     img {
+    width:170px;
+    height:65px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+     .top-left {
+    
+    top: 14px;
+  position: absolute;
+    left: 90px;
+  }
+    .top-left3 {
+    position: absolute;
+    top: 50px;
+  font-size:12px;
+    left: 276px;
+    font-family:Garamond;
+
+  }
+    
+
+   
+    .top-left2 {
+    position: absolute;
+    top: 3px;
+  font-size:30px;
+    left: 270px;
+    font-family: Garamond;
+  }
+
+
+     .div12 {
+      margin-left:35px;
+    box-shadow: 10px 10px 5px grey;
+    background-color:white;
+    height:50px;
+    width:200px;
+    padding:10px;
+    color:#ff9999;
+    font-size:30px;
+  }
+     .div11 {
+      margin-left:25px;
+    width: 470px;
+    height: 60px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 10px 10px;
+    color:#ff9999;
+    font-size:25px;
+  }
+    .div10 {
+      margin-left:50px;
+    width: 1200px;
+    height: 140px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 10px 10px;
+    color:#ff9999;
+    font-size:20px;
+  }
+    
+    .div8 {
+      margin-left: 50px;
+      text-indent: 50px;
+    width: 1200px;
+    height: 90px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 10px 10px;
+    color:#ff9999;
+    font-size:20px;
+  }
+    .div7 {
+      margin-left: 410px;
+    width: 600px;
+    height: 80px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 10px 10px;
+    color:#ff9999;
+    font-size:40px;
+  }
+    .div6 {
+   
+    background-color:white;
+    height:190px;
+    width:1250px;
+    padding:10px;
+    color:#ff9999;
+    font size:100px;
+  }
+    h2{
+      text-indent:50px;
+      color:white ;
+    }
+
+  .div5 {
+    width: 800px;
+    height: 80px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 10px 10px;
+    color:#ff9999;
+    font-size:50px;
+  }
+
+   * {box-sizing: border-box}
+
+  /* Set height of body and the document to 100% */
+  body, html {
+    height: 90%;
+    margin: 0;
+    font-family: Arial;
+  }
+
+  /* Style tab links */
+  .tablink {
+    background-color: #ffb3b3;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+  }
+
+  .tablink:hover {
+    background-color: #ff9999;
+  }
+
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: #ff9999;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+
+  #Home {background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4xKO4bDenYWIP90MmKrfZS8UZkzy9ImPKsA&usqp=CAU');
+  background-size:cover;
+  }
+  #News {background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_fV7AOqDHJQzlLE91kHZXW8MHI02EaY1Ug&usqp=CAU');
+  background-size:cover;
+  }
+  #Contact {background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-0/s280x280/49813534_2089472018050224_7883277747273859072_n.jpg?_nc_cat=108&ccb=2&_nc_sid=58c789&_nc_eui2=AeGk0b7g79zWbfzOeHON8nv02GJngCgxbGPYYmeAKDFsY5X2UdWoIvWVpBypREMjVunXpaCP_P3vsQ0nw8u75Ymm&_nc_ohc=PWZMXuMu0HUAX8Kg9sa&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=7&oh=daddb8acb845f91ce372854576562962&oe=603DE215');
+  background-size:cover;
+  }
+  #About {background-image: url('data:image/jpeg;base64,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');
+  background-size:cover;
+  }
+  #About-Us {background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSybiWClNsX3DOR47YgngAg5TYSaMrKMoVqFw&usqp=CAU');
+  background-size:cover;
+  }
+   {
+    float: left;
+   }
+
+
+    
+  	body {
+    background-image: url('data:image/jpeg;base64,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');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 90%
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+   .div16 {
+      margin-left:25px;
+    width: 800px;
+    height: 48px;
+    padding: 16px;
+    background-color: white;
+    color:#ff9999;
+    font-size:20px;
+
+  </style>
+
+  </head>
+  <body>
+    <center><div class="top-left"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/144371269_916125389125467_4351065578452833143_n.png?_nc_cat=111&ccb=2&_nc_sid=58c789&_nc_eui2=AeGjVfgpJgGMnjQAc-4Ng-3cBHE9wYZgbNwEcT3BhmBs3LvsOtatfJuuyOejdgzjP7TJqcBGwhyRFx-q4NNXvgmo&_nc_ohc=_thchP0LPv0AX_X2B64&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=e1fd404768de00273ca8186b592a5436&oe=603E65CE" alt="Italian Trulli"></div></center>
+  </div>
+  <p class="top-left2">YAMANAN</p>
+  <p class="top-left3">Turn your dreams into reality.</p>
+  <br>
+  <br>
+  <br>
+  <br>
+
+    <br>
+  <div class="navbar">
+    <a class="active" href="C:\Users\NEKSAGURL\Desktop\yamanan\yamanan.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+    <a class="active" href="C:\Users\NEKSAGURL\Desktop\yamanan\mini-tasks.html"><i class="fa fa-fw fa-envelope"></i> Outputs</a> 
+    <a class="active" href="C:\Users\NEKSAGURL\Desktop\yamanan\contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    
+    
+  </div> 
+
+
+  <p class="div5">WHAT ARE YOU ABOUT TO SEE</p>
+  <center><h3><p class="div6">You're about to see the results of every task. Each task has its own instruction and each student has his/her own understanding and perspective. Before starting your work, planning and setting a goal plays a big role for your project. Making a layout for your desired product is one way of planning. Your goal is your mission and it is your duty to accomplish and achieve it. Start to build up yourself and change your mindset in a way that you will be able to focus on your task. Practice more,for the bigger the task, the bigger the responsibility you will hold. Work requires time, determination, inspiration, and effort otherwise it will all be wasteful. The outputs you will see below are made with summarized magnificent ideas. The students invested a lot of their time to manage these tasks successfully and produce an impressive outcome. </p></h3></center>
+
+  <p><div class="div16"> If you would like to see the outputs of each Mini-task, kindly press the icon tabs.</div></p>
+  <button class="tablink"  onclick="openPage('Home', this, 'white')">first </button>
+  <button class="tablink"  onclick="openPage('News', this, 'white')">third</button>
+  <button class="tablink"  onclick="openPage('Contact', this, 'white')">fourth</button>
+  <button class="tablink"  onclick="openPage('About', this, 'white')">fifth</button>
+    <button class="tablink"  onclick="openPage('About-Us', this, 'white')">sixth</button>
+
+
+  <div id="Home" class="tabcontent">
+    <div style="background-color: #ffbb99;color:white;padding:0.5px;">
+    <h3><center><p>As can you see, In our Mini task 1, We were tasked to make a visual representation about "I love Chicken" by using different kinds of photo editing software. Some of us used emoticons and different characters to show and represent how much we love chicken.</p></center></h3></div>
+    <br>
+    <center><img src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p206x206/145109878_1131365560649827_8558513961707518383_n.jpg?_nc_cat=107&ccb=2&_nc_sid=58c789&_nc_eui2=AeGNEUhN2zaNkyCuMqTm9E0EY5hEDlkZAbxjmEQOWRkBvB3L2pdyeNbzMl7NVeleFFAHttv5OiO2D0gZw42MBdhe&_nc_ohc=aAWYgSXGimYAX9cIPjV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=6&oh=9c8a5ab05d58cc146bb29e92c133cef8&oe=603BFA8C"  alt="Flowers in Chania">
+    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/144639846_171524694407373_4817709971125430553_n.jpg?_nc_cat=111&ccb=2&_nc_sid=f79d6e&_nc_eui2=AeHljMSLwyjDpmbs2s3-IElnrlgdBt-C_YiuWB0G34L9iCj5KUZknXq7Jh-3vlHQa5_Xlu9_VGSCuQqwsFX94Xum&_nc_ohc=v-ZIZIgCvc4AX-8Y770&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=6ffe8a53d57254a5e90b1ba076e86a08&oe=603CC660" style="margin-left:90px" alt="Flowers in Chania">
+    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s206x206/143502260_967829943743311_3455819386104635726_n.jpg?_nc_cat=106&ccb=2&_nc_sid=58c789&_nc_eui2=AeE_JMHmLCG2yP1LhI0MHbAC-kpooExFM1P6SmigTEUzU48YU9eRxQoqUOBSXIZ9MT6zzwr62JRUk66wEHK72EqN&_nc_ohc=p4UDWoaP5dkAX-mo53H&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=7&oh=cde21bfa7fd26edcb6613fe080241a54&oe=603BF096" style="margin-left:90px" width="15%" height="19%" alt="Flowers in Chania"></center>
+  </div>
+
+  <div id="News" class="tabcontent">
+  <div style="background-color: #ffbb99;color:white;padding:0.5px;">
+    <h3><center><p>In mini task 3, We used our phones or digital camera to take pictures of ourselves in one of our favorite place at home, After that we explained how we captured our photo. Even if you are not a professional photographer, using an editing software would make you look like one. </p> </center></h3></div>
+    <br>
+    <center><img src="C:\Users\NEKSAGURL\Desktop\yamanan\images\images 2\3-pd.jpg" style="margin-left:0px" width="15%" height="17%" alt="Flowers in Chania">
+    <img src="C:\Users\NEKSAGURL\Desktop\yamanan\images\images 2\3-pdpd.jpg" style="margin-left:50px" ></center>
+    
+  </div>
+
+  <div id="Contact" class="tabcontent">
+    
+  <div style="background-color: #ffbb99;color:white;padding:0.5px;">
+    <h3><center><p>In Mini Task 4, We used one of our product/services that we like the most to make a print Ad out of it. This task seems to be easy yet challenging. It helped us improve our skills in photo editing and designing which can be added in our website and it also helps us to understand what it takes to actually come up with ideas.</p></center></h3></div>
+    <br>
+    <center><img src="C:\Users\NEKSAGURL\Desktop\yamanan\images\images 3\3pd.jpg" style="margin-left:90px"  alt="Flowers in Chania">
+    <img src="C:\Users\NEKSAGURL\Desktop\yamanan\images\images 3\4-pdpd.jpg" style="margin-left:90px" width="15%" height="19%" alt="Flowers in Chania">
+   <img src="C:\Users\NEKSAGURL\Desktop\yamanan\images\images 3\4-pdpdpd.jpg" style="margin-left:90px"  alt="Flowers in Chania"></center>
+   
+   
+  </div>
+
+  <div id="About" class="tabcontent">
+    <div style="background-color: #ffbb99;color:white;padding:0.5px;">
+    <h3><center><p>In Mini task 5, The task given was all about using Point of Purchase(POP) Materials.These materials are indeed important when it comes to advertising. This task helps a lot especially in advertising because we need to be innovative and creative on how we design our product effectively and in an eye-catching way.   .</p></center></h3></div>
+    <br>
+    <center><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/144487151_3845296752200261_2469253894264111530_n.jpg?_nc_cat=108&ccb=2&_nc_sid=f79d6e&_nc_eui2=AeGqm1JZTfJ5NrYOP5JQ0-a-eKScKY-3rXR4pJwpj7etdA15wO3vVB5OluAbGMWsvrUf0JDa9nUHg_ArTCtyFkyY&_nc_ohc=m0j0T5RxNo8AX8gdSQo&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=da33c59e6fd2b09a5b25cefdd1967ff2&oe=603C1672" style="margin-left:50px" alt="Flowers in Chania">
+    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/144630529_2900918706900094_3500074160234450588_n.jpg?_nc_cat=110&ccb=2&_nc_sid=f79d6e&_nc_eui2=AeGKnnXr4j9xrJwkpGclvh7JuyqMSKxPQJq7KoxIrE9AmmFTyBYEbgLqHrtDENAJaSIqJl9QXHAZoHUSpKV8C9C5&_nc_ohc=SEqCQ_RIfyIAX-r0tJo&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=e60bd960915f2cc3a19d82dc87216ca6&oe=603D1CCB" style="margin-left:50px"  alt="Flowers in Chania">
+    <img src="C:\Users\NEKSAGURL\Desktop\yamanan\images\images 4\5ko.jpg" style="margin-left:50px" alt="Flowers in Chania">
+    <img src="C:\Users\NEKSAGURL\Desktop\yamanan\images\images 4\5-pd.jpg" style="margin-left:50px"  alt="Flowers in Chania"></center>
+  </div>
+
+  <div id="About-Us" class="tabcontent">
+    <div style="background-color: #ffbb99;color:white;padding:0.5px;">
+   <h3><center> <p>In Mini task 6, We were instructed to maka Point of Purchase(POP) Display for our products. POP Displays are marketing materials that helps promote a certain product or services. These shown below are some of the examples of POP Displays.</p></center></h3></div>
+   <br>
+   <center><img src="C:\Users\NEKSAGURL\Desktop\yamanan\images\images 5\6.jpg" style="margin-left:90px" width="15%" height="19%" alt="Flowers in Chania">
+    <img src="C:\Users\NEKSAGURL\Desktop\yamanan\images\images 5\6pd.jpg" alt="Flowers in Chania">
+    <img src="C:\Users\NEKSAGURL\Desktop\yamanan\images\images 5\6-pd.jpg"  alt="Flowers in Chania">
+    <img src="C:\Users\NEKSAGURL\Desktop\yamanan\images\images 5\6pdpd.jpg"  alt="Flowers in Chania"></center>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+    
+  <script>
+  function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+  <p class="div7">Tasks Instruction and Guidance</p>
+   <p class="div11"> Here are the instructions of each task:</p>
+   <p class="div12"> Mini-task #1</p>
+   <p class="div8">The task was all about making a visual representation out of the given statement "I love Chicken" by using any kind of an editing software.This is the easiest task among the other tasks distributed since representing something on your own understanding or perspective isn't hard. The more effort you exert, the more creative you will be. </p>
+   <p class="div12">Mini-task #2</p>
+   <p class="div8">In this task, we were expected to select a still or steady photo of ourselves and make different scenes out of it by using any kind of editing software. This task was a little bit hard to do especially for the first-timers who weren't able to experience this kind of activity.(Sorry, Attachment not available due to technical problems.) </p>
+   <p class="div12"> Mini-task #3</p>
+   <p class="div8"> This task is all about Photography. We have to take a photo of ourselves in one of our favorite area at home and then use any kind of  editing software to make our photo even more impressive. In this generation, People who pose effortlessly and still looks attractive in photographs are called photogenic. It would be unchallenging for them to do this task.</p>
+   <p class="div12">Mini-task #4</p>
+   <p class="div10">This task starts to be a little bit of challenging because you have to be creative in doing it. It is all about advertising your product or making a PRINT-AD using any available editing software. Advertising your product in a significant and an eye-catching way would be a great help with the business you're working on. Opportunities and negotiations will rise when you advertise your product effectively.  </p>
+   <p class="div12"> Mini-task #5</p>
+   <p class="div10"> It still talks about advertising, but this is different from the recent task you have read. In this task, you have to make a Point-of-Purchase(POP) Material for your product. POP Materials are marketing tools used for advertising your products or it could be merchandising. POP Materials could be standees and banners that you can see in the market or the billboards that you have seen on the street, or many other ways of advertising.Big companies Advertise their products on televisions, social medias, and other websites since it is more effective. </p>
+   <p class="div12"> Mini-task #6</p>
+   <p class="div8">  It is still related with Mini-task #5 information but in this task you will be doing a Point-of-Purchase(POP) Display for your product. POP displays are also marketing materials placed beside the merchandise you're promoting. Shelves are one of the examples of POP Displays. </p>
+   <br>
+   <br>
+   <br>
+
+
+  <br>
+  <br>
+  <br>
+
+   
+  </body>
+  </html>
